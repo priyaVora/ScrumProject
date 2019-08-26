@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="csc130.cardmania.war.WarController">
+   <children>
+      <AnchorPane prefHeight="241.0" prefWidth="409.0" style="-fx-background-color: #fab;">
+         <children>
+            <Label layoutX="54.0" layoutY="69.0" text="Save Name:">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveGame" layoutX="174.0" layoutY="142.0" mnemonicParsing="false" onAction="#saveGame" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="fileName" layoutX="205.0" layoutY="74.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

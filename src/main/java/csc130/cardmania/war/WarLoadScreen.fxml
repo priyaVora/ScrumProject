@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc130.cardmania.war.WarLoadController">
+   <children>
+      <AnchorPane prefHeight="178.0" prefWidth="384.0" style="-fx-background-color: #fab;">
+         <children>
+            <ComboBox fx:id="saves" layoutX="118.0" layoutY="77.0" prefWidth="150.0" />
+            <Label layoutX="90.0" layoutY="31.0" text="Choose a file to load:">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="loadButton" layoutX="118.0" layoutY="130.0" mnemonicParsing="false" onAction="#loadGame" prefHeight="30.0" prefWidth="68.0" text="Load">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="200.0" layoutY="130.0" mnemonicParsing="false" onAction="#sendToNameScreen" prefHeight="30.0" prefWidth="68.0" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

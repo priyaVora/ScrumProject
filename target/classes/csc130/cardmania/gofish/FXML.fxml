@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc130.cardmania.gofish.GoFishGameController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #EBB2BD;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="playerName1" contentDisplay="TOP" text="Player: " />
+            <Label fx:id="player1CurrentScore" text="Points:" />
+            <Button fx:id="goFishPlayer1" alignment="CENTER" mnemonicParsing="false" onAction="#goFishClick1" text="Go Fish" />
+            <ComboBox fx:id="viewForPlayer1" onAction="#viewCountSelection1" prefWidth="150.0" promptText="View Hand" />
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #EBB2BD;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="playerName2" text="Player: " />
+            <Label fx:id="player2CurrentScore" text="Points: " />
+            <Button fx:id="goFishPlayer2" mnemonicParsing="false" onAction="#goFishClick2" text="Go Fish" />
+            <ComboBox fx:id="viewForPlayer2" onAction="#viewCountSelection2" prefWidth="150.0" promptText="View Hand" />
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <SplitPane dividerPositions="0.5259391771019678, 0.8398926654740608, 0.5" orientation="VERTICAL" prefHeight="382.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="156.0" prefWidth="398.0" style="-fx-background-color: #B2B090;">
+               <children>
+                  <TextField fx:id="viewCountBox2" layoutX="348.0" layoutY="1.0" prefHeight="25.0" prefWidth="50.0" />
+                  <Button fx:id="move2" layoutX="350.0" layoutY="117.0" mnemonicParsing="false" onAction="#move2" text="Move" />
+                  <ComboBox fx:id="opposingPlayerComboBox2" layoutX="14.0" layoutY="117.0" onAction="#playerForMoveSelected2" prefWidth="150.0" promptText="Select Player" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="148.0" prefWidth="398.0" style="-fx-background-color: #B2B090;">
+               <children>
+                  <TextField fx:id="viewCountBox1" layoutY="1.0" prefHeight="25.0" prefWidth="50.0" />
+                  <Button fx:id="move1" layoutX="2.0" layoutY="75.0" mnemonicParsing="false" onAction="#move1" text="Move" />
+                  <ComboBox fx:id="opposingPlayerComboBox1" layoutX="248.0" layoutY="75.0" onAction="#playerForMoveSelected1" prefWidth="150.0" promptText="Select Player" />
+               </children></AnchorPane>
+            <Button fx:id="deal" mnemonicParsing="false" onAction="#callDeal" prefHeight="25.0" prefWidth="149.0" text="Deal" />
+            <TextField fx:id="messageBox" prefHeight="25.0" prefWidth="310.0" promptText="Message Box..." />
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

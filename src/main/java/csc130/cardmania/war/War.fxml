@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="652.0" prefWidth="859.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc130.cardmania.war.WarController">
+	<children>
+		<Button fx:id="flipButton" contentDisplay="TEXT_ONLY" layoutX="778.0" layoutY="313.0" mnemonicParsing="false" onAction="#onFlip" text="Flip" />
+      <ImageView fx:id="pile1" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@card_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="captured2" fitHeight="150.0" fitWidth="200.0" layoutX="129.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pile2" fitHeight="150.0" fitWidth="200.0" layoutX="747.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@card_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="captured1" fitHeight="150.0" fitWidth="200.0" layoutX="627.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flipped2" fitHeight="150.0" fitWidth="200.0" layoutX="316.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flipped1" fitHeight="150.0" fitWidth="200.0" layoutX="443.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2war1" fitHeight="150.0" fitWidth="200.0" layoutX="275.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2war2" fitHeight="150.0" fitWidth="200.0" layoutX="226.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2war3" fitHeight="150.0" fitWidth="200.0" layoutX="177.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2war4" fitHeight="150.0" fitWidth="200.0" layoutX="129.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1war1" fitHeight="150.0" fitWidth="200.0" layoutX="480.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1war2" fitHeight="150.0" fitWidth="200.0" layoutX="528.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1war3" fitHeight="150.0" fitWidth="167.0" layoutX="577.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1war4" fitHeight="150.0" fitWidth="106.0" layoutX="626.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="p2Name" layoutX="261.0" layoutY="14.0" text="Player 2" />
+      <Label fx:id="p1Name" layoutX="556.0" layoutY="590.0" text="Player 1" />
+      <Label fx:id="p1CardsLeft" layoutX="548.0" layoutY="620.0" text="Cards Left: 26" />
+      <Label fx:id="p2CardsLeft" layoutX="253.0" layoutY="42.0" text="Cards Left: 26" />
+      <Button fx:id="saveButton" layoutX="22.0" layoutY="607.0" mnemonicParsing="false" onAction="#saveScreen" text="Save" />
+	</children>
+</AnchorPane>

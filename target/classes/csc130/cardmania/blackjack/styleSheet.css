@@ -1,0 +1,23 @@
+.bottom {
+	-fx-background-image: url('wood.jpg');
+}
+
+.betButton1{
+	-fx-background-image: url('1_dollar_chip.png');
+	-fx-background-size: 32px 34px;
+	-fx-background-repeat: no-repeat;
+}
+
+.betButton2{
+	-fx-background-image: url('5_dollar_chip.png');
+	-fx-background-size: 32px 34px;
+	-fx-background-repeat: no-repeat;
+}
+
+.betButton3{
+	-fx-background-image: url('10_dollar_chip.png');
+	-fx-background-size: 32px 34px;
+	-fx-background-repeat: no-repeat;
+}
+
+

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="694.0" style="-fx-background-color: #076324;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc130.cardmania.blackjack.BlackjackGameScreenController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="478.0" prefHeight="165.0" prefWidth="694.0" styleClass="bottom" stylesheets="@styleSheet.css">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="13.0" prefHeight="136.0" prefWidth="291.0" style="-fx-background-color: transparent;">
+               <children>
+                  <Button fx:id="bet1Button" layoutX="51.0" layoutY="23.0" mnemonicParsing="false" onAction="#bet1Clicked" prefHeight="34.0" prefWidth="32.0" style="-fx-background-radius: 100;" styleClass="betButton1" stylesheets="@styleSheet.css" />
+                  <Button fx:id="bet5Button" layoutX="130.0" layoutY="21.0" mnemonicParsing="false" onAction="#bet5Clicked" prefHeight="34.0" prefWidth="32.0" style="-fx-background-radius: 100;" styleClass="betButton2" stylesheets="@styleSheet.css" />
+                  <Button fx:id="bet10Button" layoutX="210.0" layoutY="21.0" mnemonicParsing="false" onAction="#bet10Clicked" prefHeight="34.0" prefWidth="32.0" style="-fx-background-radius: 100;" styleClass="betButton3" stylesheets="@styleSheet.css" />
+                  <Button fx:id="submitBetButton" layoutX="79.0" layoutY="78.0" mnemonicParsing="false" onAction="#submitBetClicked" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: linear-gradient(from 13px 38px to 52px 52px, reflect,  #d2691e, #ffa500 100%);;" text="Place Bet" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="hitButton" layoutX="422.0" layoutY="25.0" mnemonicParsing="false" onAction="#hitClicked" prefHeight="42.0" prefWidth="90.0" text="HIT" />
+            <Button fx:id="standButton" layoutX="446.0" layoutY="83.0" mnemonicParsing="false" onAction="#standClicked" prefHeight="42.0" prefWidth="149.0" text="STAND" />
+            <Button fx:id="splitButton" layoutX="526.0" layoutY="25.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="90.0" text="SPLIT" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="p5BetLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="513.0" layoutY="429.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="p5NameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="568.0" layoutY="429.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;" />
+      <Label fx:id="p5LeftHandLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="512.0" layoutY="302.0" prefHeight="17.0" prefWidth="41.0" style="-fx-background-color: fff;" />
+      <Label fx:id="p5RightHandLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="601.0" layoutY="302.0" prefHeight="17.0" prefWidth="41.0" style="-fx-background-color: fff;" />
+      <ImageView fx:id="p5Card6" fitHeight="54.0" fitWidth="41.0" layoutX="601.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p5Card7" fitHeight="54.0" fitWidth="41.0" layoutX="609.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p5Card8" fitHeight="54.0" fitWidth="41.0" layoutX="617.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p5Card9" fitHeight="54.0" fitWidth="41.0" layoutX="625.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p5Card10" fitHeight="54.0" fitWidth="41.0" layoutX="633.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p5Card1" fitHeight="54.0" fitWidth="41.0" layoutX="514.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p5Card2" fitHeight="54.0" fitWidth="41.0" layoutX="522.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p5Card3" fitHeight="54.0" fitWidth="41.0" layoutX="530.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p5Card4" fitHeight="54.0" fitWidth="41.0" layoutX="538.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p5Card5" fitHeight="54.0" fitWidth="41.0" layoutX="546.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="p3BankLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="388.0" layoutY="160.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="p3BetLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="277.0" layoutY="160.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="p3NameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="332.0" layoutY="160.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;" />
+      <Label fx:id="p3LeftHandLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="276.0" layoutY="33.0" prefHeight="17.0" prefWidth="41.0" style="-fx-background-color: fff;" />
+      <Label fx:id="p3RightHandLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="33.0" prefHeight="17.0" prefWidth="41.0" style="-fx-background-color: fff;" />
+      <ImageView fx:id="p3Card6" fitHeight="54.0" fitWidth="41.0" layoutX="365.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p3Card7" fitHeight="54.0" fitWidth="41.0" layoutX="373.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p3Card8" fitHeight="54.0" fitWidth="41.0" layoutX="381.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p3Card9" fitHeight="54.0" fitWidth="41.0" layoutX="389.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p3Card10" fitHeight="54.0" fitWidth="41.0" layoutX="397.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p3Card1" fitHeight="54.0" fitWidth="41.0" layoutX="278.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p3Card2" fitHeight="54.0" fitWidth="41.0" layoutX="286.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p3Card3" fitHeight="54.0" fitWidth="41.0" layoutX="294.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p3Card4" fitHeight="54.0" fitWidth="41.0" layoutX="302.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p3Card5" fitHeight="54.0" fitWidth="41.0" layoutX="310.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="p1BetLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="426.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="p1NameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="426.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;" />
+      <Label fx:id="p1LeftHandLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="49.0" layoutY="299.0" prefHeight="17.0" prefWidth="41.0" style="-fx-background-color: fff;" />
+      <Label fx:id="p1RightHandLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="138.0" layoutY="299.0" prefHeight="17.0" prefWidth="41.0" style="-fx-background-color: fff;" />
+      <Label fx:id="p1BankLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="153.0" layoutY="426.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="p1Card6" fitHeight="54.0" fitWidth="41.0" layoutX="138.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1Card7" fitHeight="54.0" fitWidth="41.0" layoutX="146.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1Card8" fitHeight="54.0" fitWidth="41.0" layoutX="154.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1Card9" fitHeight="54.0" fitWidth="41.0" layoutX="162.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1Card10" fitHeight="54.0" fitWidth="41.0" layoutX="170.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1Card1" fitHeight="54.0" fitWidth="41.0" layoutX="51.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1Card2" fitHeight="54.0" fitWidth="41.0" layoutX="59.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1Card3" fitHeight="54.0" fitWidth="41.0" layoutX="67.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1Card4" fitHeight="54.0" fitWidth="41.0" layoutX="75.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1Card5" fitHeight="54.0" fitWidth="41.0" layoutX="83.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="p2BetLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="227.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="p2NameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="227.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;" />
+      <Label fx:id="p2LeftHandLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="100.0" prefHeight="17.0" prefWidth="41.0" style="-fx-background-color: fff;" />
+      <Label fx:id="p2RightHandLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="100.0" prefHeight="17.0" prefWidth="41.0" style="-fx-background-color: fff;" />
+      <Label fx:id="p2BankLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="227.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="p2Card6" fitHeight="54.0" fitWidth="41.0" layoutX="131.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2Card7" fitHeight="54.0" fitWidth="41.0" layoutX="139.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2Card8" fitHeight="54.0" fitWidth="41.0" layoutX="147.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2Card9" fitHeight="54.0" fitWidth="41.0" layoutX="155.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2Card10" fitHeight="54.0" fitWidth="41.0" layoutX="163.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2Card1" fitHeight="54.0" fitWidth="41.0" layoutX="44.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2Card2" fitHeight="54.0" fitWidth="41.0" layoutX="52.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2Card3" fitHeight="54.0" fitWidth="41.0" layoutX="60.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2Card4" fitHeight="54.0" fitWidth="41.0" layoutX="68.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2Card5" fitHeight="54.0" fitWidth="41.0" layoutX="76.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="p4BankLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="624.0" layoutY="230.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="p4BetLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="513.0" layoutY="230.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="p4NameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="568.0" layoutY="230.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;" />
+      <Label fx:id="p4LeftHandLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="512.0" layoutY="103.0" prefHeight="17.0" prefWidth="41.0" style="-fx-background-color: fff;" />
+      <Label fx:id="p4RightHandLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="601.0" layoutY="103.0" prefHeight="17.0" prefWidth="41.0" style="-fx-background-color: fff;" />
+      <ImageView fx:id="p4Card6" fitHeight="54.0" fitWidth="41.0" layoutX="601.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p4Card7" fitHeight="54.0" fitWidth="41.0" layoutX="609.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p4Card8" fitHeight="54.0" fitWidth="41.0" layoutX="617.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p4Card9" fitHeight="54.0" fitWidth="41.0" layoutX="625.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p4Card10" fitHeight="54.0" fitWidth="41.0" layoutX="633.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p4Card1" fitHeight="54.0" fitWidth="41.0" layoutX="514.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p4Card2" fitHeight="54.0" fitWidth="41.0" layoutX="522.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p4Card3" fitHeight="54.0" fitWidth="41.0" layoutX="530.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p4Card4" fitHeight="54.0" fitWidth="41.0" layoutX="538.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p4Card5" fitHeight="54.0" fitWidth="41.0" layoutX="546.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="houseHandLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="311.0" layoutY="345.0" prefHeight="17.0" prefWidth="41.0" style="-fx-background-color: fff;" />
+      <ImageView fx:id="houseCard1" fitHeight="54.0" fitWidth="41.0" layoutX="313.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="houseCard2" fitHeight="54.0" fitWidth="41.0" layoutX="321.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="houseCard3" fitHeight="54.0" fitWidth="41.0" layoutX="329.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="houseCard4" fitHeight="54.0" fitWidth="41.0" layoutX="337.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="houseCard5" fitHeight="54.0" fitWidth="41.0" layoutX="345.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="p5BankLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="623.0" layoutY="429.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: fff;">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="phaseLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="5.0" prefHeight="17.0" prefWidth="102.0" text="Betting Phase" textFill="#f3f3f3" />
+   </children>
+</AnchorPane>
